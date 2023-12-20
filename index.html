@@ -23,27 +23,5 @@
       >Download WebScraper</a
     >
     <a href="Pages/FuckU.html">Fuck This Guy Man</a>
-
-    <label for="expression">Indtast et udtryk:</label>
-    <input type="text" id="expression" placeholder="f.eks. 2+2" />
-    <button onclick="calculate()">Beregn</button>
-
-    <p>Resultat: <span id="result"></span></p>
-
-    <script>
-      function calculate() {
-        // Hent udtrykket fra inputfeltet
-        var expression = document.getElementById("expression").value;
-
-        try {
-          // Evaluer udtrykket og opdater resultatfeltet
-          var result = eval(expression);
-          document.getElementById("result").textContent = result;
-        } catch (error) {
-          // Håndter eventuelle fejl, f.eks. hvis udtrykket er ugyldigt
-          document.getElementById("result").textContent = "Ugyldigt udtryk";
-        }
-      }
-    </script>
   </body>
 </html>
