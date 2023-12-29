@@ -1,60 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My first web page</title>
-    <style>
-      body {
-        background-image: url("https://images.saymedia-content.com/.image/t_share/MTk0NTIwMDQ4MzU2ODI4Nzgy/how-to-create-cool-website-backgrounds-the-ultimate-guide.gif");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-
-      img {
-        width: 100px;
-        border-radius: 50px;
-        float: left;
-        margin-right: 10px;
-      }
-
-      .username {
-        font-weight: bold;
-      }
-
-      /* Styling for links as buttons */
-      a {
-        display: inline-block;
-        padding: 10px 20px;
-        margin: 10px 0;
-        text-decoration: none;
-        color: #fff;
-        background-color: #3498db;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-      }
-
-      /* Hover effect for links */
-      a:hover {
-        background-color: #2980b9;
-      }
-    </style>
+    <title>Loffy</title>
+    <link rel="stylesheet" href="Style/style.css" />
   </head>
   <body>
     <img src="images/mypic.jpg" alt="Pic of me" />
-    <p class="username">@Loffy</p>
+
+    <a href="mailto:Champ@Loffy.dk">Champ@Loffy.dk</a>
     <p>Hejsa!</p>
     <img src="images/coffee.jpg" alt="Pic of Coffee" />
-    <a
-      href="https://drive.google.com/file/d/1n-rY4AI9UKvEVpnw7Q-x4s1RNiQLS_uR/view?usp=drive_link"
-      >Download WebScraper <br />
-      Windows</a
-    >
-    <a
-      href="https://drive.google.com/file/d/1c4lPg9eN9Qqm0cPcLDdUyVXuhpTZSpnc/view?usp=sharing"
-      >Download WebScraper <br />
-      Mac</a
-    >
-
-    <a href="Pages/FuckU.html">Fuck This Guy Man </a>
+    <table>
+      <tr>
+        <td><a href="Pages/FuckU.html">Fuck This Guy Man </a></td>
+      </tr>
+      <tr>
+        <td><a class="download" href="Pages/Downloads.html">Downloads </a></td>
+      </tr>
+      <tr>
+        <td>
+          <a class="converter" href="Pages/Link2Down.html"
+            >From Drive Link To Download Link</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a class="converter" href="Pages/UnitConverter.html"
+            >Unit Converter Metric / Imperial</a
+          >
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

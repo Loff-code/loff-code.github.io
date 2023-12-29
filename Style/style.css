@@ -1,0 +1,46 @@
+
+body {
+  background-image: url("https://images.saymedia-content.com/.image/t_share/MTk0NTIwMDQ4MzU2ODI4Nzgy/how-to-create-cool-website-backgrounds-the-ultimate-guide.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img {
+  width: 100px;
+  border-radius: 50px;
+  float: left;
+  margin-right: 10px;
+}
+
+/* Styling for links as buttons */
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+a:hover {
+  background-color: #2980b9;
+}
+
+a.download{
+ background-image: url("../Icons/Downloads.png"); 
+ background-size: 16px 16px;
+ background-position: 8px center;
+ background-repeat: no-repeat;
+ padding-left: 32px;
+}
+a.converter{
+  background-image: url("../Icons/Converter.png"); 
+ background-size: 16px 16px;
+ background-position: 8px center;
+ background-repeat: no-repeat;
+ padding-left: 32px;
+}
