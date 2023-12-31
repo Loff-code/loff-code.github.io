@@ -8,9 +8,16 @@ body {
 
 img {
   width: 100px;
-  border-radius: 50px;
+  border-radius: 0 35px 0 35px;
   float: left;
   margin-right: 10px;
+}
+img.BIG{
+  width: 700px;
+  border-radius: 0 250px 0  250px;
+  float: left;
+  margin-right: 10px;
+
 }
 
 /* Styling for links as buttons */
@@ -22,7 +29,13 @@ a {
   color: #fff;
   background-color: #3498db;
   border-radius: 5px;
+  /* This is for the icon*/
   transition: background-color 0.3s ease;
+  background-position: 8px center;
+  background-repeat: no-repeat;
+  padding-left: 32px;
+  background-size: 16px 16px;
+
 }
 
 /* Hover effect for links */
@@ -32,15 +45,21 @@ a:hover {
 
 a.download{
  background-image: url("../Icons/Downloads.png"); 
- background-size: 16px 16px;
- background-position: 8px center;
- background-repeat: no-repeat;
- padding-left: 32px;
+
+
 }
 a.converter{
   background-image: url("../Icons/Converter.png"); 
- background-size: 16px 16px;
- background-position: 8px center;
- background-repeat: no-repeat;
- padding-left: 32px;
+
+
+}
+
+a.next{
+  background-image: url("../Icons/next.png"); 
+
+}
+a.email{
+  background-image: url("../Icons/Email.png"); 
+  background-size: 20px 16px;
+
 }
