@@ -15,7 +15,7 @@ img {
 img.BIG{
   width: 700px;
   border-radius: 0 250px 0  250px;
-  float: left;
+  float: center;
   margin-right: 10px;
 
 }
@@ -44,7 +44,7 @@ a:hover {
 }
 
 a.download{
- background-image: url("../Icons/Downloads.png"); 
+  background-image: url("../Icons/Downloads.png"); 
 
 
 }
