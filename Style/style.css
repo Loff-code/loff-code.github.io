@@ -44,7 +44,7 @@ a:hover {
 }
 
 a.download{
-  background-image: url("../Icons/Downloads.png"); 
+  background-image: url("../Icons/d.png"); 
 
 
 }
@@ -55,7 +55,7 @@ a.converter{
 }
 
 a.next{
-  background-image: url("../Icons/next.png"); 
+  background-image: url("../Icons/Next.png"); 
 
 }
 a.email{
