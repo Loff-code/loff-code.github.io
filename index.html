@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loffy</title>
     <link rel="stylesheet" href="Style/style.css" />
   </head>
   <body>
-    <img src="images/mypic.jpg" alt="Pic of me" />
+    <div class="blog-header">
+      <a href="index.html" class="logo-link">
+        <img class="logo-img" src="images/logo.png" alt="Logo" />
+      </a>
 
-    <a class="email" href="mailto:Champ@Loffy.dk">Champ@Loffy.dk</a>
-    <img src="images/coffee.jpg" alt="Pic of Coffee" />
-    <table>
-      <tr>
-        <td>
-          <a class="download" href="Pages/Downloads.html">Flight Scrapers </a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a class="next" href="Pages/FuckU.html">Fuck You Dudee</a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a class="converter" href="Pages/Link2Down.html"
-            >Convert download link to instant download</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a class="converter" href="Pages/UnitConverter.html"
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="Pages/Downloads.html">Flight Scrapers</a>
+          <a href="Pages/FuckU.html">Fuck You Dudee</a>
+          <a href="Pages/Link2Down.html">Convert download link</a>
+          <a href="Pages/UnitConverter.html"
             >Convert Between Metric and Imperial</a
           >
-        </td>
-      </tr>
-    </table>
-    <h3>Check your sexuality</h3>
-    <input
-      type="text"
-      id="textInput"
-      onkeydown="pressEvent(event)"
-      placeholder="Your name"
-    />
-    <button onclick="displayText()">Check</button>
-    <div id="displayArea"></div>
-    <script src="Script/index_script.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-container">
+      <img src="images/mypic.jpg" alt="Pic of me" />
+      <img class="coffee" src="images/coffee.jpg" alt="Pic of Coffee" /> <br />
+
+      <table>
+        <tr>
+          <td>
+            <a class="email" href="mailto:Champ@Loffy.dk">Champ@Loffy.dk</a>
+          </td>
+        </tr>
+      </table>
+      <h3>Check your sexuality</h3>
+      <input
+        type="text"
+        id="textInput"
+        onkeydown="pressEvent(event)"
+        placeholder="Your name"
+      />
+      <button onclick="displayText()">Check</button>
+      <div id="displayArea"></div>
+      <script src="Script/index_script.js"></script>
+    </div>
   </body>
 </html>

@@ -1,30 +1,54 @@
-@import url("../Icons/downloads.png");
-@import url("../Icons/Converter.png");
-@import url("../Icons/Next.png");
-@import url("../Icons/Email.png");
+
 
 body {
   background-image: url("https://images.saymedia-content.com/.image/t_share/MTk0NTIwMDQ4MzU2ODI4Nzgy/how-to-create-cool-website-backgrounds-the-ultimate-guide.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin: 0;
+  
+}
+.page-container {
+  padding: 0 0 0 50px; /* Adjust the padding value as needed */
 }
 
 img {
   width: 100px;
   border-radius: 0 35px 0 35px;
-  float: left;
   margin-right: 10px;
 }
-img.BIG{
-  width: 700px;
-  border-radius: 0 250px 0  250px;
-  float: center;
-  margin-right: 10px;
 
+.blog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212e36;
+  padding: 0px;
+  text-align: center;
+  color: #fff;
 }
 
-/* Styling for links as buttons */
+
+.blog-header a.logo-link {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  margin-right: 10px;
+  padding: 0%;
+}
+
+.blog-header a.logo-link img {
+  width: 70px; /* Adjust the width to match the heading font size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.blog-header a.logo-link:hover {
+  background: none;
+}
+
 a {
   display: inline-block;
   padding: 10px 20px;
@@ -33,37 +57,95 @@ a {
   color: #fff;
   background-color: #3498db;
   border-radius: 5px;
-  /* This is for the icon*/
   transition: background-color 0.3s ease;
   background-position: 8px center;
   background-repeat: no-repeat;
   padding-left: 32px;
   background-size: 16px 16px;
-
 }
 
-/* Hover effect for links */
 a:hover {
   background-color: #2980b9;
 }
 
-a.download{
-  background-image: url("../Icons/downloads.png"); 
-
-
-}
-a.converter{
-  background-image: url("../Icons/Converter.png"); 
-
-
+a.download {
+  background-image: url("../Icons/downloads.png");
 }
 
-a.next{
-  background-image: url("../Icons/Next.png"); 
-
+a.converter {
+  background-image: url("../Icons/Converter.png");
 }
-a.email{
-  background-image: url("../Icons/Email.png"); 
+
+a.next {
+  background-image: url("../Icons/Next.png");
+}
+
+a.email {
+  background-image: url("../Icons/Email.png");
   background-size: 20px 16px;
+}
 
+/* Styles for the dropdown menu */
+.dropdown {
+  display: inline-block;
+}
+.dropbtn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  background-position: 8px center;
+  background-repeat: no-repeat;
+  padding-left: 32px;
+  background-size: 16px 16px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  right: 4px; /* Align the dropdown to the right edge of the button */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a.download {
+  background-image: url("../Icons/downloads.png");
+}
+
+.dropdown-content a.converter {
+  background-image: url("../Icons/Converter.png");
+}
+
+.dropdown-content a.next {
+  background-image: url("../Icons/Next.png");
+}
+
+.dropdown-content a.email {
+  background-image: url("../Icons/Email.png");
+  background-size: 20px 16px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
