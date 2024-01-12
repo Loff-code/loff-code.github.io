@@ -117,6 +117,7 @@ headerTemplate.innerHTML = `
       <a href="/Pages/UnitConverter.html"
         >Convert Between Metric and Imperial</a
       >
+      <a href="/Pages/Poster.html">Post .csv file</a>
     </div>
   </div>
 </div>
