@@ -17,7 +17,7 @@ function displayText() {
         "<p>" +
         (firstName && lastName ? fullName : firstName || lastName) +
         ", you're gay!</p><br>" +
-        '<img class="coffee" src="https://media.makeameme.org/created/youre-gay-5b804a.jpg" alt="Pic of Coffee" />';
+        '<img style="border-radius: 20px" class="coffee" src="https://media.makeameme.org/created/youre-gay-5b804a.jpg" alt="Pic of Coffee" />';
     }
   }
 }
