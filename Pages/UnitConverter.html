@@ -10,6 +10,36 @@
   <body>
     <header-component></header-component>
     <h1>Metric/Imerial Unit Converter</h1>
-    <h3>Currently under construction</h3>
+    <h3>Choose units to convert</h3>
+    <input
+      type="number"
+      id="metricInput"
+      class="unitBox"
+      placeholder="Metric"
+      onkeydown="pressEvent(event)"
+    />
+    <select name="" id="">
+      <option value="">millimeter</option>
+      <option value="">centimeter</option>
+      <option value="">decimeter</option>
+      <option value="">meter</option>
+      <option selected value="">kilometer</option>
+    </select>
+    <select name="" id="">
+      <option value="">inches</option>
+      <option value="">feet</option>
+      <option value="">yards</option>
+      <option selected value="">miles</option>
+    </select>
+    <input
+      type="number"
+      id="imperialInput"
+      class="unitBox"
+      placeholder="Imperial"
+      onkeydown="pressEvent(event)"
+    />
+    <button>Convert</button>
+
+    <script src="/Script/unit_converter.js"></script>
   </body>
 </html>
