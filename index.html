@@ -9,8 +9,8 @@
   <body>
     <header-component></header-component>
     <div class="page-container">
-      <img src="images/mypic.jpg" alt="Pic of me" />
-      <img class="coffee" src="images/coffee.jpg" alt="Pic of Coffee" /> <br />
+      <img class="edge" src="images/mypic.jpg" alt="Pic of me" />
+      <img class="edge" src="images/coffee.jpg" alt="Pic of Coffee" /> <br />
 
       <table>
         <tr>
@@ -20,13 +20,25 @@
         </tr>
       </table>
       <h3>Check your sexuality</h3>
+      <!-- <form>
+        <legend>Check your sexuality</legend> -->
       <input
         type="text"
-        id="textInput"
+        id="firstName"
         onkeydown="pressEvent(event)"
-        placeholder="Your name"
+        placeholder="First Name"
       />
+      <br />
+      <input
+        type="text"
+        id="lastName"
+        onkeydown="pressEvent(event)"
+        placeholder="Last name"
+      />
+      <br />
       <button onclick="displayText()">Check</button>
+      <!-- </form> -->
+
       <div id="displayArea"></div>
       <script src="/Script/index_script.js"></script>
       <script src="/Script/header.js"></script>

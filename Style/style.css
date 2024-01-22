@@ -1,4 +1,12 @@
 
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+}
 
 body {
   background-image: url("https://images.saymedia-content.com/.image/t_share/MTk0NTIwMDQ4MzU2ODI4Nzgy/how-to-create-cool-website-backgrounds-the-ultimate-guide.gif");
@@ -6,13 +14,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
+  color: #fff;
   
 }
 .page-container {
   padding: 0 0 0 50px; /* Adjust the padding value as needed */
 }
 
-img {
+img.edge {
   width: 100px;
   border-radius: 0 35px 0 35px;
   margin-right: 10px;
@@ -53,3 +62,62 @@ a.email {
   background-image: url("../Icons/Email.png");
   background-size: 20px 16px;
 }
+
+button {
+  display: block;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2em;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 3px;
+  background: #3498db; /* Updated background color */
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 3px 0px #1f4579;
+  transition: background 200ms;
+}
+button.linkButton{
+  margin: 15px auto;
+}
+
+
+
+button:hover {
+  background: #2980b9; /* Updated hover background color */
+}
+
+button:active {
+  background: #1f4579; /* Updated active background color */
+  box-shadow: 0 2px 3px -1px #b5b5b5;
+}
+input{
+  display: block;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 10px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 3px 0px #1f4579;
+  transition: background 200ms;
+
+}
+
+.linkBox{
+  display: block;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 760px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  margin: 15px auto;
+}
+#displayArea {
+text-align: center;
+display: block;
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 18px;
+}
+

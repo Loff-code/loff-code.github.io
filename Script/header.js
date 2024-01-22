@@ -53,6 +53,17 @@ headerTemplate.innerHTML = `
   cursor: pointer;
 }
 
+
+
+button.dropbtn:hover {
+  background: #2980b9; /* Updated hover background color */
+}
+
+button.dropbtn:active {
+  background: #f4579; /* Updated active background color */
+  box-shadow: 0 2px 3px -1px #b5b5b5;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
