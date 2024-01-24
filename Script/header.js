@@ -1,4 +1,4 @@
-const headerTemplate = document.createElement('template');
+const headerTemplate = document.createElement("template");
 
 headerTemplate.innerHTML = `
  <style>
@@ -40,28 +40,36 @@ headerTemplate.innerHTML = `
 }
 .dropbtn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 20px 20px;
   text-decoration: none;
   color: #fff;
-  background-color: #3498db;
-  border-radius: 5px;
+  background-color: transparent;
+  border-radius: 18px;
+  border: none;
   transition: background-color 0.3s ease;
-  background-position: 8px center;
+  background-position: center;
   background-repeat: no-repeat;
-  padding-left: 32px;
-  background-size: 16px 16px;
-  cursor: pointer;
-}
 
+  background-size: 25px 25px;
+  background-image: url("/Icons/Menu.png"); 
+}
 
 
 button.dropbtn:hover {
   background: #2980b9; /* Updated hover background color */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-image: url("/Icons/Menu.png"); 
 }
 
 button.dropbtn:active {
   background: #f4579; /* Updated active background color */
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 0 2px 3px -1px #b5b5b5;
+  background-size: 25px 25px;
+  background-image: url("/Icons/Menu.png"); 
 }
 
 .dropdown-content {
@@ -75,7 +83,7 @@ button.dropbtn:active {
 
 .dropdown-content a {
   color: #fff;
-  padding: 12px 16px;
+  padding: 12px 26px;
   display: block;
   text-decoration: none;
 }
@@ -89,25 +97,35 @@ button.dropbtn:active {
   display: block;
 }
 
-.dropdown-content a.download {
-  background-image: url("../Icons/downloads.png");
-}
-
-.dropdown-content a.converter {
-  background-image: url("../Icons/Converter.png");
-}
-
-.dropdown-content a.next {
-  background-image: url("../Icons/Next.png");
-}
-
-.dropdown-content a.email {
-  background-image: url("../Icons/Email.png");
-  background-size: 20px 16px;
-}
-
 .dropdown-content a:hover {
   background-color: #ddd;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  padding-left: 36px;
+  background-size: 16px 16px;
+}
+
+a.download {
+  background-image: url("/Icons/downloads.png");
+}
+a.converter {
+  background-image: url("/Icons/Converter.png");
+}
+
+a.next {
+  background-image: url("/Icons/Next.png");
+}
+
+a.email {
+  background-image: url("/Icons/Email.png");
+  background-size: 20px 16px;
 }
 
 </style>
@@ -120,15 +138,15 @@ button.dropbtn:active {
   </a>
 
   <div class="dropdown">
-    <button class="dropbtn">Menu</button>
+    <button class="dropbtn"></button>
     <div class="dropdown-content">
-      <a href="/Pages/Downloads.html">Flight Scrapers</a>
-      <a href="/Pages/FuckU.html">Fuck You Dudee</a>
-      <a href="/Pages/Link2Down.html">Convert download link</a>
-      <a href="/Pages/UnitConverter.html"
-        >Convert Between Metric and Imperial</a
+      <a class="download" href="/Pages/Downloads.html">Flight Scrapers</a>
+      <a class="next" href="/Pages/FuckU.html">Fuck You Dudee</a>
+      <a class="converter" href="/Pages/Link2Down.html">Convert Download Link</a>
+      <a class="converter" href="/Pages/UnitConverter.html"
+        >Convert Units</a
       >
-      <a href="/Pages/Poster.html">Post .csv file</a>
+      <a class="next" href="/Pages/Poster.html">Post .csv file</a>
     </div>
   </div>
 </div>
@@ -141,10 +159,10 @@ class Header extends HTMLElement {
   }
 
   connectedCallback() {
-    const shadowRoot = this.attachShadow({ mode: 'closed' });
+    const shadowRoot = this.attachShadow({ mode: "closed" });
 
     shadowRoot.appendChild(headerTemplate.content);
   }
 }
 
-customElements.define('header-component', Header);
+customElements.define("header-component", Header);
