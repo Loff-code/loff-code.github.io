@@ -1,11 +1,9 @@
-
 h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 3em;
   text-align: center;
   margin: 0;
   padding: 0;
-
 }
 
 body {
@@ -15,7 +13,6 @@ body {
   background-attachment: fixed;
   margin: 0;
   color: #fff;
-  
 }
 .page-container {
   padding: 0 0 0 50px; /* Adjust the padding value as needed */
@@ -65,7 +62,7 @@ a.email {
 
 button {
   display: block;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.2em;
   padding: 10px 18px;
   border: none;
@@ -76,11 +73,10 @@ button {
   box-shadow: 0 2px 3px 0px #1f4579;
   transition: background 200ms;
 }
-button.linkButton{
+
+button.linkButton {
   margin: 15px auto;
 }
-
-
 
 button:hover {
   background: #2980b9; /* Updated hover background color */
@@ -90,9 +86,10 @@ button:active {
   background: #1f4579; /* Updated active background color */
   box-shadow: 0 2px 3px -1px #b5b5b5;
 }
-input{
+
+input {
   display: block;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 10px;
   padding: 10px 18px;
   border: none;
@@ -100,12 +97,11 @@ input{
   cursor: pointer;
   box-shadow: 0 2px 3px 0px #1f4579;
   transition: background 200ms;
-
 }
 
-.linkBox{
+.linkBox {
   display: block;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   width: 760px;
   padding: 10px;
   font-size: 18px;
@@ -114,10 +110,10 @@ input{
   border-radius: 100px;
   margin: 15px auto;
 }
-#displayArea {
-text-align: center;
-display: block;
-font-family: 'Roboto Condensed', sans-serif;
-font-size: 18px;
-}
 
+#displayArea {
+  text-align: center;
+  display: block;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+}
