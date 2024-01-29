@@ -133,7 +133,7 @@ a.email {
 
   <header>
   <div class="blog-header">
-  <a href="/index.html" class="logo-link">
+  <a href="/" class="logo-link">
     <img class="logo-img" src="/images/Logo.png" alt="Logo" />
   </a>
 
@@ -147,7 +147,9 @@ a.email {
         >Convert Units</a
       >
       <a class="next" href="/Pages/Poster.html">Post .csv file</a>
-    </div>
+      <a class="Manwha" href="/Pages/Manwha.html">Manwha</a>
+     
+      </div>
   </div>
 </div>
   </header>
