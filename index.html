@@ -13,7 +13,7 @@
       <img class="edge" src="images/coffee.jpg" alt="Pic of Coffee" />
       <br />
 
-      <form id="sexualityForm">
+      <form id="sexualityForm" onsubmit="scrollToResult()">
         <h3>Check your sexuality</h3>
         <label for="firstName">First Name:</label>
         <input
@@ -64,6 +64,13 @@
       <div style="border-radius: 90px" id="displayArea"></div>
       <script src="/Script/index_script.js"></script>
       <script src="/Script/header.js"></script>
+
+      <script>
+        function scrollToResult() {
+          var displayArea = document.getElementById("displayArea");
+          displayArea.scrollIntoView();
+        }
+      </script>
     </div>
   </body>
 </html>

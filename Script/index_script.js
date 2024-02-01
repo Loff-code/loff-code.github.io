@@ -17,14 +17,27 @@ function displayText() {
         "<p>" +
         (firstName && lastName ? fullName : firstName || lastName) +
         ", you're gay!</p><br>" +
-        '<img style="border-radius: 20px" class="coffee" src="https://media.makeameme.org/created/youre-gay-5b804a.jpg" alt="Pic of Coffee" />';
+        '<img style="border-radius: 20px" src="https://media.makeameme.org/created/youre-gay-5b804a.jpg" alt="You are gay" onload="scrollToResult()"/>';
     }
   }
 }
 
+function scrollToResult() {
+  var displayArea = document.getElementById("displayArea");
+  displayArea.scrollIntoView();
+}
+
 function pressEvent(event) {
   if (event.key == "Enter") {
-    displayText();
+    document
+      .getElementById("sexualityForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission
+        displayText();
+        var displayArea = document.getElementById("displayArea");
+        displayArea.scrollIntoView();
+        return;
+      });
   }
 }
 
@@ -33,5 +46,7 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent form submission
     displayText();
+    var displayArea = document.getElementById("displayArea");
+    displayArea.scrollIntoView();
     return;
   });
