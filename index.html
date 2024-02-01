@@ -13,32 +13,53 @@
       <img class="edge" src="images/coffee.jpg" alt="Pic of Coffee" />
       <br />
 
-      <table>
-        <tr>
-          <td>
-            <a class="email" href="mailto:Champ@Loffy.dk">Champ@Loffy.dk</a>
-          </td>
-        </tr>
-      </table>
-      <h3>Check your sexuality</h3>
-      <!-- <form>
-        <legend>Check your sexuality</legend> -->
-      <input
-        type="text"
-        id="firstName"
-        onkeydown="pressEvent(event)"
-        placeholder="First Name"
-      />
-      <br />
-      <input
-        type="text"
-        id="lastName"
-        onkeydown="pressEvent(event)"
-        placeholder="Last name"
-      />
-      <br />
-      <button onclick="displayText()">Check</button>
-      <!-- </form> -->
+      <form id="sexualityForm">
+        <h3>Check your sexuality</h3>
+        <label for="firstName">First Name:</label>
+        <input
+          type="text"
+          id="firstName"
+          onkeydown="pressEvent(event)"
+          placeholder="First Name"
+        />
+        <br />
+
+        <label for="lastName">Last Name:</label>
+        <input
+          type="text"
+          id="lastName"
+          onkeydown="pressEvent(event)"
+          placeholder="Last name"
+        />
+        <br />
+
+        <label>
+          <input
+            style="display: inline-block; box-shadow: none"
+            type="radio"
+            name="sexuality"
+            id="not-gay"
+            required
+          />
+          Not gay
+        </label>
+        <br />
+
+        <label>
+          <input
+            style="display: inline-block; box-shadow: none"
+            type="radio"
+            name="sexuality"
+            id="gay"
+            required
+          />
+          Gay
+        </label>
+        <br />
+        <br />
+
+        <button type="submit">Check</button>
+      </form>
 
       <div style="border-radius: 90px" id="displayArea"></div>
       <script src="/Script/index_script.js"></script>

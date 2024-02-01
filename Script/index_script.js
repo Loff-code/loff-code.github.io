@@ -27,3 +27,11 @@ function pressEvent(event) {
     displayText();
   }
 }
+
+document
+  .getElementById("sexualityForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
+    displayText();
+    return;
+  });

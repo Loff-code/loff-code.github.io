@@ -19,6 +19,7 @@ function copyToClipboard() {
 
   var displayArea = document.getElementById("displayArea");
   if (linkOutput.value == "") {
+    f;
     displayArea.innerText = "Nothing to Copy";
     return;
   }
