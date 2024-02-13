@@ -19,7 +19,7 @@ headerTemplate.innerHTML = `
           <a class="converter" href="/loffy.dk/Pages/Link2Down.html">Convert Download Link</a>
           <a class="converter" href="/loffy.dk/Pages/UnitConverter.html">Convert Units</a>
           <a class="next" href="/loffy.dk/Pages/Form_upload.php">Upload Form</a>
-          <a class="next" href="/view_data.php">View Data</a>
+          <a class="next" href="/loffy.dk/Pages//view_data.php">View Data</a>
         </div>
       </div>
     </div>
