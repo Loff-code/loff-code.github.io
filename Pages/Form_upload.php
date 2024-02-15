@@ -6,11 +6,11 @@
     <title>Loffy</title>
     <link rel="stylesheet" href="/loffy.dk/Style/style.css" />
     <link rel="icon" href="/loffy.dk/images/Logo-modified.png" type="image/png" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> <!-- Include jQuery -->
   </head>
   <body>
     <header-component></header-component>
-
-    <div class="page-container">
+     <div class="page-container">
     <h1>gay</h1>
     <?php
     $name = "fag";
@@ -30,16 +30,17 @@
         echo "<br>Itereation $i ";
     }
     ?>
-    <form action="/database.php" method="post">
+    <form id="uploadForm" action="/database.php" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <label for="email">Email:</label>
         <input type="email" id="email" name="gay" required>
-        <button type="submit" >Submit</button>
+        <button type="button" onclick="submitForm()">Submit</button>
     </form>
     <a class="next" href="/view_data.php">View Data</a>
-     <script src="/loffy.dk/Script/heading.js"></script>
-    
+    <script src="/loffy.dk/Script/heading.js"></script>
+    <script src="/loffy.dk/Script/Forms.js">    
+    </script>
    </div>
   </body>
 </html>
