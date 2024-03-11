@@ -1,7 +1,9 @@
 const headerTemplate = document.createElement("template");
 
 headerTemplate.innerHTML = `
-<style> @import "/Style/Header.css" </style>
+  <style>
+    @import url("/Style/header.css");
+  </style>
 
   <header>
     <div class="blog-header">
@@ -12,13 +14,13 @@ headerTemplate.innerHTML = `
       <div class="dropdown">
         <button class="dropbtn"></button>
         <div class="dropdown-content">
-          <a class="download" href="/Pages/Downloads.html">Flight Scrapers</a>
+          <a class="download" href="/loffy.dk/Pages/Downloads.html">Flight Scrapers</a>
           <a class="next" href="/Pages/FuckU.html">Fuck You Dudee</a>
-          <a class="converter" href="/Pages/Link2Down.html">Convert Download Link</a>
-          <a class="converter" href="/Pages/UnitConverter.html">Convert Units</a>
-          <a class="next" href="/Projects/RPS/Play.html">Rock, Paper, Scissor</a>
-        
-          </div>
+          <a class="converter" href="/loffy.dk/Pages/Link2Down.html">Convert Download Link</a>
+          <a class="converter" href="/loffy.dk/Pages/UnitConverter.html">Convert Units</a>
+          <a class="next" href="/loffy.dk/Pages/Form_upload.php">Upload Form</a>
+          <a class="next" href="/loffy.dk/Pages//view_data.php">View Data</a>
+        </div>
       </div>
     </div>
   </header>
