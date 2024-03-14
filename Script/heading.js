@@ -18,9 +18,10 @@ headerTemplate.innerHTML = `
           <a class="next" href="/Pages/FuckU.html">Fuck You Dudee</a>
           <a class="converter" href="/Pages/Link2Down.html">Convert Download Link</a>
           <a class="converter" href="/Pages/UnitConverter.html">Convert Units</a>
-          <a class="next" href="/Pages/Form_upload.php">Upload Form</a>
-          <a class="next" href="/Pages/view_data.php">View Data</a>
-        </div>
+          <a class="next" href="/Projects/RPSS/Play.html">Rock Paper Scissor</a>
+          <a class="next" href="/Projects/FlexBox/flex1.html">Flex zone</a>
+        
+          </div>
       </div>
     </div>
   </header>
