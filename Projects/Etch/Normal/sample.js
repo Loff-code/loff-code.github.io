@@ -27,6 +27,7 @@ for (let index = 0; index < 16; index++) {
     box.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
   }
 }
+
 // for (let index = 0; index < 16; index++) {
 //   const box01 = document.querySelector(".box" + index + "a1");
 //   box01.style.backgroundColor = "rgb(255," + index * 10 + ", 0)";
