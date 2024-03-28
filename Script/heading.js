@@ -20,7 +20,8 @@ headerTemplate.innerHTML = `
           <a class="converter" href="/Pages/UnitConverter.html">Convert Units</a>
           <a class="next" href="/Projects/RPSS/Play.html">Rock Paper Scissor</a>
           <a class="next" href="/Projects/FlexBox/flex1.html">Flex zone</a>
-        
+          <a class="next" href="/Projects/Etch/Color/aids.html">Sketch zone</a>
+
           </div>
       </div>
     </div>
