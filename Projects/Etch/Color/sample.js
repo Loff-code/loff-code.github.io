@@ -14,7 +14,7 @@ button.addEventListener("click", function () {
   clearBoard();
   const inputValue = input.value;
   console.log(inputValue);
-  board(inputValue);
+  board(inputValue > 100 ? 100 : inputValue);
   // Use the inputValue variable for further processing
 });
 inputField.appendChild(button);
