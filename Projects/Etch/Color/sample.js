@@ -78,8 +78,10 @@ function board(size) {
   for (let index = 0; index < size; index++) {
     for (let j = 0; j < size; j++) {
       const box = document.querySelector(".box" + index + "a" + j);
-      box.addEventListener("mouseover", function () {
-        box.style.backgroundColor = "yellow";
+      box.addEventListener("mouseover", function (event) {
+        if (event.buttons === 1) {
+          box.style.backgroundColor = "yellow";
+        }
       });
       // box.addEventListener("mouseout", function () {
       //   let red = (index + j) * (255 / 30);
