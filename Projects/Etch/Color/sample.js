@@ -8,14 +8,24 @@ document.body.appendChild(inputField);
 inputField.appendChild(input);
 inputField.style.display = "flex";
 
-const button = document.createElement("button");
-button.textContent = "Create Variable";
-button.addEventListener("click", function () {
+input.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    start();
+  }
+});
+
+function start() {
   clearBoard();
   const inputValue = input.value;
   console.log(inputValue);
   board(inputValue > 100 ? 100 : inputValue);
   // Use the inputValue variable for further processing
+}
+
+const button = document.createElement("button");
+button.textContent = "Create Variable";
+button.addEventListener("click", function () {
+  start();
 });
 inputField.appendChild(button);
 
@@ -74,6 +84,7 @@ function board(size) {
       box.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
     }
   }
+
   // Add event listener to each box element
   for (let index = 0; index < size; index++) {
     for (let j = 0; j < size; j++) {
