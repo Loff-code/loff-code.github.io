@@ -25,7 +25,7 @@ saveAgeButton.addEventListener("click", () => {
 saveNameButton.addEventListener("click", () => {
   const userName = document.querySelector(".name").value;
   userNameText.textContent = userName;
-  sessionStorage.setItem("name", userName);
+  localStorage.setItem("name", userName);
 });
 
 function displayUserAge() {
