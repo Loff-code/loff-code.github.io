@@ -22,6 +22,7 @@ headerTemplate.innerHTML = `
           <a class="next" href="/Projects/FlexBox/flex1.html">Flex zone</a>
           <a class="next" href="/Projects/Etch/Color/aids.html">Sketch zone</a>
           <a class="next" href="/Projects/localStorage/gay.html">Storage zone </a>
+          <a class="next" href="/Projects/vendingMachine/vender.html">Vending Machine</a>
 
           </div>
       </div>
