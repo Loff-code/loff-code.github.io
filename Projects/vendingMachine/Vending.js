@@ -3,12 +3,7 @@ let price = 0;
 let cans = 20;
 let fails = 0;
 
-let bit0 = false;
-let bit1 = false;
-let bit2 = false;
-let bit3 = false;
-let bit4 = false;
-let bit = [bit0, bit1, bit2, bit3, bit4];
+let bit = Array(5);
 
 let canCount = document.querySelector(".canCount");
 let priceDsp = document.getElementById("priceDsp");
@@ -20,7 +15,7 @@ sumDsp.value = sum.toString();
 textDisplay.innerText = "hello";
 
 function buy() {
-  if (sum > price && cans > 0) {
+  if (sum >= price && cans > 0) {
     textDisplay.innerText = "Item bought";
     sum -= price;
     cans -= 1;
